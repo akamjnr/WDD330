@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta name="description" content="WDD-330 Web Frontend Development II Portfolio Portal: BYU-Idaho 2022">
+        <meta name="author" content="Anyway Kambeva">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/small.css">
+        <link rel="stylesheet" href="../css/medium.css">  
+
+        <title>WDD-330 | Web Frontend Development II - Anyway Kambeva</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div>            
+            
+            <main>
+                <h2>L05 Readings</h2> 
+                <h3>Ajax - Chapter 13:</h3>  
+
+                <p><b>Ajax: </b>“Technique that allows web pages to communicate asynchronously with a server, and 
+                    it dynamically updates web pages without reloading. This enables data to be sent and received 
+                    in the background, as well as portions of a page to be updated in response to user events, 
+                    while the rest of the program continues to run”.<br>
+                    Ajax is revolutionary and has enabled websites to be dynamic rather than static.
+                    <br><br>
+
+                    <b>Clients and Servers: </b>the internet (web of computers) has two parts, namely, clients 
+                    (e.g. Web browser) and servers. A client makes a request for a resource from server, server 
+                    processes the request and responds back to client.<br> 
+                    Ajax technique allows JavaScript to request resources (usually: JSON data, text or html) on 
+                    behalf of the client from the server. Most commonly used data type in Ajax nowadays is JSON, 
+                    because it's lightweight, easier to parse than XML, and is natively supported in JavaScript.
+                    <br><br>
+
+                    <b>API </b>(Application Programming Interface) - methods that allows external access to another program or service.<br><br>
+
+                    <b>Fetch API: </b>Standard for requesting and sending data asynchronously across a network.<br><br>
+
+                    <b>JSON </b>is the most common format for AJAX responses. The json() method is used to transform a stream of JSON data into 
+                    a promise that resolves to a JavaScript object.<br><br>
+
+                    <b>Request Interface: </b>More control is gained over the request being made by providing a Request object as an argument. 
+                    Request objects are created using the Request() constructor.<br><br>
+
+                    <b>HTTP: </b>Hypertext Transfer Protocol - “When a client (usually a browser) makes a request to a 
+                    server, it contains information about which HTTP verb to use”. HTTP verbs (HTTP methods) tell the 
+                    server what type of request is being made.<br>
+                    5 most commonly used verbs when dealing with resources on the web: GET, POST, PUT, PATCH, DELETE. 
+                    A link in a web page will make a GET request by default and forms are also submitted using a GET 
+                    request by default, but will often use a POST request.<br><br>
+
+                    <b>Sending Information: </b>Ajax can also be used to send information in variety of formats, but usually 
+                    a JSON string.<br>
+                    Most forms will have an action attribute that specifies the URL to use if the form is sent without using 
+                    Ajax and will also have a method attribute that will specify the HTTP verb to use.
+                    <br><br>
+
+                    <b>FormData: </b>Fetch API includes the FormData interface, which makes it much easier to submit information 
+                    in forms using Ajax. FormData interface helps to reduce the amount of code needed when submitting forms.
+                </p>
+                
+            </main> 
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> | Anyway Kambeva | Cape Town | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br>Last Updated: <span id="update"></span></p>
+            </footer>
+
+            <script src="../js/scripts.js">
+            </script>         
+        </div>
+        
+    </body>
+
+</html>

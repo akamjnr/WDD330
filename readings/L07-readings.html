@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta name="description" content="WDD-330 Web Frontend Development II Portfolio Portal: BYU-Idaho 2022">
+        <meta name="author" content="Anyway Kambeva">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/small.css">
+        <link rel="stylesheet" href="../css/medium.css">  
+
+        <title>WDD-330 | Web Frontend Development II - Anyway Kambeva</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div>            
+            
+            <main>
+                <h2>L07 Readings</h2> 
+                <h3>Further Functions - Chapter 11:</h3>  
+
+                <p><b>Functions: </b>First-class objects, they can be passed around in the same way as every other value. 
+                    They can have their own properties and methods, as well as accepting other functions as parameters and 
+                    being returned by other functions.<br><br>
+                    “All functions have a length property that returns the number of parameters the function has… The call() 
+                    method can be used to set the value of this inside a function to an object that is provided as the first 
+                    argument.”<br><br>
+                    If a function doesn't refer to an object as this in its body, it can still be called using the call() 
+                    method, but null must be provided as its first argument.
+                    <br><br>
+
+                    <b>Custom Properties: </b>Properties to functions can be customized in the same way as adding properties 
+                    to any JavaScript object.<br><br>
+
+                    <b>Memoization: </b>Provides result caching, or memoization. If a function takes some time to compute a 
+                    return value, we can save the result in a cache property. If the same argument is used again later, we 
+                    can simply return the value from the cache, than having to compute the result again.<br><br>
+
+                    <b>IIFE: </b>(Immediately Invoked Function Expression) is an anonymous function that is invoked as soon as 
+                    it is defined. This is accomplished by placing parentheses at the end of the function definition 
+                    (parentheses are used to invoke a function). The function must also be made into an expression by placing 
+                    the whole declaration inside parentheses.<br><br>
+                    IIFEs are useful for performing a task while keeping any variables wrapped up within the function, meaning 
+                    the global namespace will not be polluted with lots of variable names.<br><br>
+
+                    <b>Temporary Variables: </b>Once a variable has been declared, it can't be removed from a scope. If the 
+                    variable is only required temporarily, it may create confusion, errors or even clash with another piece of 
+                    code, if it's still available later in the code. Code that uses the temporary variable must be placed 
+                    inside an IIFE so that it's only available while the IIFE is invoked, then it will disappear.<br><br>
+
+                    <b>Safe Use of Strict Mode: </b>Placing 'use strict' at the beginning of a file can be problematic in that, 
+                    it will enforce strict mode on all the JavaScript in the file. It is therefore recommended to place all your 
+                    code inside an IIFE, and only the code inside the IIFE is forced to use strict mode.<br><br>
+                    “An IIFE can be used to enclose a block of code inside its own private scope so it doesn't interfere with 
+                    any other part of the program. Using IIFEs in this way means code can be added or removed separately.”<br><br>
+
+                    <b>Functions that Define and Rewrite Themselves: </b>The dynamic nature of JavaScript means that a function 
+                    can both call and define itself, and even redefine itself by assigning an anonymous function to a variable 
+                    that has the same name as the function.<br><br>
+
+                    <b>Recursive Function: </b>is a function that invokes itself until a certain condition is met.<br><br>
+
+                    <b>Callback Hell: </b>refers to a tangled mess of code. More and more callbacks are being 
+                    used as the use of asynchronous programming in JavaScript increases.<br><br>
+
+                    <b>Async Functions: </b>are preceded by the async keyword and allow you to write asynchronous code as if 
+                    it was synchronous. This is achieved by using the await operator before an asynchronous function. This will 
+                    wrap the return value of the function in a promise that can then be assigned to a variable. The next line 
+                    of code is not executed until the promise is resolved.<br><br>
+
+                    <b>Closures: </b>one of JavaScript's most powerful features, but can be difficult to understand initially. 
+                    A closure is formed when the inner function is returned by the outer function, maintaining access to any 
+                    variables declared inside the enclosing function. A closure is a reference to a variable that was created 
+                    inside the scope of another function, but is then kept alive and used in another part of the program.<br><br>
+
+                    “Closures not only have access to variables declared in a parent function's scope, they can also change the 
+                    value of these variables.”<br><br>
+                </p>
+                
+            </main> 
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> | Anyway Kambeva | Cape Town | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br>Last Updated: <span id="update"></span></p>
+            </footer>
+
+            <script src="../js/scripts.js">
+            </script>         
+        </div>
+        
+    </body>
+
+</html>

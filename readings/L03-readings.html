@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta name="description" content="WDD-330 Web Frontend Development II Portfolio Portal: BYU-Idaho 2022">
+        <meta name="author" content="Anyway Kambeva">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/small.css">
+        <link rel="stylesheet" href="../css/medium.css">  
+
+        <title>WDD-330 | Web Frontend Development II - Anyway Kambeva</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div>            
+            
+            <main>
+                <h2>L03 Readings</h2> 
+                <h3>The Window Object - Chapter 9:</h3>  
+
+                <p><b>Browser Object Model: </b>Collection of properties and methods that contain information about the browser and computer screen.
+                </p>
+                
+                <p><b>Global variables </b>are variables created without using the const, let or var keywords and are actual properties of a global object. 
+                    You should refer to global variables without using the window object (less typing and portable code between environments); except when it has not been defined.                    
+                </p>
+
+                <p><b>Dialogs: </b>3 functions that produce dialogs in browsers and are supported in major browsers as methods of the window object: alert(), confirm() and prompt().                    
+                </p>
+                <p>1. window.alert() method will pause the execution of the program and display a message (provided as an argument) in a dialog box.<br><br>
+                   2. window.confirm() method stops the execution of the program, displays a confirmation dialog with a message (provided as an argument), and options of OK or Cancel.<br><br>
+                   3. window.prompt() method stops the execution of the program, then displays a dialog with a message (provided as an argument), and an input field that allows the user to enter text.
+                </p>
+
+                <p><b>Browser History: </b>window.history property can be used to access information about previously visited pages in current browser session.<br><br>
+                    ▪	window.history.length property shows the number of pages visited before the current page.
+                    <p><b>Controlling Windows: </b><br> 
+                    ▪	window.open() method opens a new window.<br>
+                    ▪	close() method closes a window if you have a reference to it.<br>
+                    ▪	window.moveTo() method moves a window, takes 2 parameters (X, Y screen coordinates).<br>
+                    ▪	window.resizeTo() method resizes a window, takes 2 parameters (width, height).<br><br>
+                    </p>
+
+                    <p><b>Screen Information: </b>object contains information about the screen the browser is displayed on. 
+                        Screen object is more useful for mobile devices. It allows to turn off the device's screen, detect 
+                        a change in orientation, lock it in a specific orientation.</p>
+
+                    <p><b>Document Object: </b>Each window object contains a document object.<br>
+                    document.write()<br>
+                    •	write() method writes a string of text to the page.<br>
+                    •	Use of document.write() is heavily frowned upon as there are extremely rare legitimate uses of it.<br>
+
+                    <p><b>Cookies: </b>Small text files that are saved/stored locally on a user's computer and can be retrieved 
+                        between requests. Restricting cookies stops sites from accessing information about users, such as other sites they have visited.<br><br>
+
+                    Cookies can be used for personalizing user browsing experience, save user preferences, keep track of user choices, 
+                    track users. “Cookies are session cookies by default”, meaning they are deleted once a browser session is finished 
+                    (user closes browser tab or window). A cookies can only be read by the domain that created it.<br>
+
+                    <p><b>Animation: </b> window.requestAnimationFrame() method can be used to produce smooth and optimized 
+                        animation by utilizing the browser's built-in graphics capabilities and can be cancelled using the 
+                        cancelAnimationFrame() method.
+                    </p>
+                
+            </main> 
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> | Anyway Kambeva | Cape Town | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br>Last Updated: <span id="update"></span></p>
+            </footer>
+
+            <script src="../js/scripts.js">
+            </script>         
+        </div>
+        
+    </body>
+
+</html>

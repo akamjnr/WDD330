@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta name="description" content="WDD-330 Web Frontend Development II Portfolio Portal: BYU-Idaho 2022">
+        <meta name="author" content="Anyway Kambeva">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/small.css">
+        <link rel="stylesheet" href="../css/medium.css">  
+
+        <title>WDD-330 | Web Frontend Development II - Anyway Kambeva</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div>            
+            
+            <main>
+                <h2>L06 Readings</h2> 
+                <h3>Forms - Chapter 8:</h3>  
+
+                <p><b>Forms: </b>Made up of form element which contains form controls such as select menus, 
+                    buttons and input fields which can be populated with information that is then processed 
+                    once the form is submitted.<br><br>
+                    Form controls have an initial value specified in the HTML code that can be changed when a user 
+                    enters information or interact with the form's interface. That value can also be changed dynamically 
+                    using JavaScript.<br>
+                    Form objects have some useful properties and methods used to interact with the form.<br><br>
+                    
+                    The form.submit() method will submit the form automatically, and using this method won't trigger 
+                    the form submit event.<br><br>
+
+                    The form.reset() method resets all the form controls back to their initial HTML specified values. 
+                    A button with a type attribute of reset can also resets all controls without additional scripting. 
+                    “Reset buttons are generally considered poor for usability, as they are too easy to click and then 
+                    wipe out all the data that's been entered.”<br><br>
+
+                    The form.action property can be used to set the action attribute of a form, so it's sent to a different 
+                    URL to be processed on the server.<br><br>
+
+                    <b>Form Events: </b>Focus event occurs when an element is focused on, e.g. an input element, this is 
+                    when the cursor is placed inside the element (by either clicking or tapping on it or navigating to it 
+                    using the keyboard).<br>
+                    The blur event occurs when user moves the focus away from the form element.<br>
+                    The change event occurs when a user moves the focus away from the form element after changing it. If a 
+                    user clicks in an input field and makes no changes, then clicks elsewhere, the change event won't fire, 
+                    but the blur event will.<br><br>
+
+                    <b>Submitting a Form: </b>Submit is possibly the most important form event that occurs when the form is 
+                    submitted and this will send the content of the form to the server for processing. The form can be 
+                    intercepted before it's sent using JavaScript by adding a submit event listener. The form can also be 
+                    stopped from being submitted by using the preventDefault() method.<br><br>
+
+                    <b>Form Controls: </b>Common form control types:<br> 
+                    ▪	input fields, including text, passwords, check boxes, radio buttons, and file uploads.<br>
+                    ▪	select menus for drop-down lists of options.<br>
+                    ▪	textarea elements for longer text entry.<br>
+                    ▪	button elements for submitting and resetting forms.
+                    <br><br>
+
+                    <b>Form Validation: </b>Process of checking whether a user has entered the information into a form correctly. 
+                    Validation can occur, and is advisable to use it, on both the client and server side using JavaScript.<br><br>
+                </p>
+                
+            </main> 
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> | Anyway Kambeva | Cape Town | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br>Last Updated: <span id="update"></span></p>
+            </footer>
+
+            <script src="../js/scripts.js">
+            </script>         
+        </div>
+        
+    </body>
+
+</html>
